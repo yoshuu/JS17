@@ -50,7 +50,7 @@ function CheckSafeInteger(value) {
   }
 }
 
-function CheckEnglishIength(value) {
+function CheckEnglishLength(value) {
   if (value.length !== 5) {
     throw new Error(`請輸入五個英文字母謝謝`);
   }
@@ -69,6 +69,6 @@ export {
   CheckDownlimit,
   isEnglishNames,
   CheckSafeInteger,
-  CheckEnglishIength,
+  CheckEnglishLength as CheckEnglishLength,
   useValidators,
 };

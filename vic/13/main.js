@@ -6,10 +6,10 @@ import { rabbitCanLazy } from "./calculate.js";
 main();
 
 function main() {
-  let turtleSpeed = 0.28;
-  let rabbitRunTime = 20 - 0.2;
-  let distance = 30000;
+  const turtleSecondSpeed = 0.28;
+  const rabbitSecondSpeed = 20 - 0.2;
+  const distance = 1000;
 
-  const result = rabbitCanLazy(turtleSpeed, rabbitRunTime, distance);
+  const result = rabbitCanLazy(turtleSecondSpeed, rabbitSecondSpeed, distance);
   console.log("這隻兔子可以偷懶" + result + "秒");
 }

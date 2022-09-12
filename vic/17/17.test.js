@@ -1,4 +1,4 @@
-import { calulate } from "./calculate.js";
+import { calculate } from "./calculate.js";
 
 describe("測試是否能正確的算出候選人分數", () => {
   test("input 候選人投票順序[51, 5, 23, 21] output是[253, 251, 305, 191]", () => {
@@ -11,10 +11,10 @@ describe("測試是否能正確的算出候選人分數", () => {
     ];
 
     const result = [
-      calulate(votes, ranking, "c1"),
-      calulate(votes, ranking, "c2"),
-      calulate(votes, ranking, "c3"),
-      calulate(votes, ranking, "c4"),
+      calculate(votes, ranking, "c1"),
+      calculate(votes, ranking, "c2"),
+      calculate(votes, ranking, "c3"),
+      calculate(votes, ranking, "c4"),
     ];
     const expected = [253, 251, 305, 191];
 

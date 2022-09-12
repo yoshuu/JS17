@@ -7,7 +7,7 @@ import {
   CheckDownlimit,
   isEnglishNames,
   CheckSafeInteger,
-  CheckEnglishIength,
+  CheckEnglishLength,
 } from "./verify.js";
 
 describe("檢查是不是輸入整數", () => {
@@ -111,7 +111,7 @@ describe("檢查是不是輸入五個字母", () => {
   test("輸入四個字母", () => {
     const value = "aaaa";
     expect(() => {
-      CheckEnglishIength(value);
+      CheckEnglishLength(value);
     }).toThrow(`請輸入五個英文字母謝謝`);
   });
 });

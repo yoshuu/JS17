@@ -1,7 +1,7 @@
 // 運用 Borda Count。算出下面的候選人分數。
 // (第一順位得4分、第二順位得3分、第三順位得2分、第四順位得1分)
 
-import { calulate } from "./calculate.js";
+import { calculate } from "./calculate.js";
 
 main();
 
@@ -15,10 +15,10 @@ function main() {
   ];
 
   const result = [
-    calulate(votes, ranking, "c1"),
-    calulate(votes, ranking, "c2"),
-    calulate(votes, ranking, "c3"),
-    calulate(votes, ranking, "c4"),
+    calculate(votes, ranking, "c1"),
+    calculate(votes, ranking, "c2"),
+    calculate(votes, ranking, "c3"),
+    calculate(votes, ranking, "c4"),
   ];
 
   console.log(
